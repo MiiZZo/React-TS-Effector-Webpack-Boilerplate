@@ -1,0 +1,21 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-typescript",
+    [
+      "@babel/preset-react",
+      {
+        "runtime": "automatic"
+      }
+    ]
+  ],
+  "plugins": [["effector/babel-plugin", { "addLoc": true }]],
+  "env": {
+    "production": {
+      "compact": true,
+      "comments": false,
+      "minified": true
+    }
+  },
+  "sourceMaps": true
+}
